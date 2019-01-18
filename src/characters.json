@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "alt": "Amy",
+      "src": "./assets/images/amy.jpg",
+      "clicked": false
+    },
+    {
+      "id": 2,
+      "alt": "Bender",
+      "src": "./assets/images/bender.jpg",
+      "clicked": false
+    },
+    {
+      "id": 3,
+      "alt": "Farnsworth",
+      "src": "./assets/images/farnsworth.gif",
+      "clicked": false
+    },
+    {
+      "id": 4,
+      "alt": "Fry",
+      "src": "./assets/images/fry.jpeg",
+      "clicked": false
+    },
+    {
+      "id": 5,
+      "alt": "Hermes",
+      "src": "./assets/images/hermes.png",
+      "clicked": false
+    },
+    {
+      "id": 6,
+      "alt": "Kiff",
+      "src": "./assets/images/kiff.jpg",
+      "clicked": false
+    },
+    {
+      "id": 7,
+      "alt": "Leela",
+      "src": "./assets/images/leela.jpg",
+      "clicked": false
+    },
+    {
+      "id": 8,
+      "alt": "Nibbler",
+      "src": "./assets/images/nibbler.png",
+      "clicked": false
+    },
+    {
+      "id": 9,
+      "alt": "Roberto",
+      "src": "./assets/images/roberto.jpg",
+      "clicked": false
+    },
+    {
+      "id": 10,
+      "alt": "Robot Devil",
+      "src": "./assets/images/robot-devil.jpg",
+      "clicked": false
+    },
+    {
+      "id": 11,
+      "alt": "Scruffy",
+      "src": "./assets/images/scruffy.png",
+      "clicked": false
+    },
+    {
+      "id": 12,
+      "alt": "Zoidberg",
+      "src": "./assets/images/zoidberg.png",
+      "clicked": false
+    }
+  ]

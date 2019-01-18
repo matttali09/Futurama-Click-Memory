@@ -1,0 +1,17 @@
+.carousel {
+    background: #631821;
+}
+
+.carousel .carousel-item {
+    height: 200px;
+    width: 200px; 
+    border: 1px solid black;
+}
+img {
+    height: inherit;
+    width: inherit;
+    background: #6fda9d;
+}
+.carousel .carousel-item:hover {
+    box-shadow: 0 0 40px #FFD64F;
+}
