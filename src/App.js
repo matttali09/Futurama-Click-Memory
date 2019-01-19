@@ -19,20 +19,20 @@ class App extends Component {
   // shuffle function for arrays (not needed anymore, im going to spin the carousel on click instead)
   // (need yarn package pure-react-carousel in order to do this by all research in react)
   // (then set the hasMasterSlider to true and activate the slider on the handleclick and then deactivate it.)
-  shuffle = array => {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-    return array;
-  };
+  // shuffle = array => {
+  //   var currentIndex = array.length, temporaryValue, randomIndex;
+  //   // While there remain elements to shuffle...
+  //   while (0 !== currentIndex) {
+  //     // Pick a remaining element...
+  //     randomIndex = Math.floor(Math.random() * currentIndex);
+  //     currentIndex -= 1;
+  //     // And swap it with the current element.
+  //     temporaryValue = array[currentIndex];
+  //     array[currentIndex] = array[randomIndex];
+  //     array[randomIndex] = temporaryValue;
+  //   }
+  //   return array;
+  // };
 
   // game reset function for win
   setGameStart = () => {
