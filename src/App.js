@@ -94,6 +94,7 @@ class App extends Component {
       // set the top score if score is higher than current top score and then set the newstate for status and shuffled array
       this.setTopScore();
       this.setState({
+        chars: characters,
         status: "Nice Choice!",
         rand: Math.random(),
       });
