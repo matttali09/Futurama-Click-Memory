@@ -1,6 +1,6 @@
 .jumbotron {
    position: relative;
-   background: url(./assets/images/futurama-cast-reincarnation.png);
+   background: url("/assets/images/futurama-cast-reincarnation.png");
    background-size: cover;
    height: 400px;
    margin-top: 65px;

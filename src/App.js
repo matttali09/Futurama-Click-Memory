@@ -12,10 +12,13 @@ class App extends Component {
     status: "Click An Image To Begin",
     score: 0,
     topScore: 0,
-    chars: characters
+    chars: characters,
+    rand: Math.random(),
   };
 
-  // shuffle function for arrays
+  // shuffle function for arrays (not needed anymore, im going to spin the carousel on click instead)
+  // (need yarn package pure-react-carousel in order to do this by all research in react)
+  // (then set the hasMasterSlider to true and activate the slider on the handleclick and then deactivate it.)
   shuffle = array => {
     var currentIndex = array.length, temporaryValue, randomIndex;
     // While there remain elements to shuffle...
@@ -37,7 +40,8 @@ class App extends Component {
       status: "Great Job! Click An Image To Begin Again",
       score: 0,
       topScore: 0,
-      chars: characters
+      chars: characters,
+      rand: Math.random()
     });
   };
 
@@ -46,7 +50,8 @@ class App extends Component {
     this.setState({
       status: "You guessed wrong! Click An Image To Try Again!",
       score: 0,
-      chars: characters
+      chars: characters,
+      rand: Math.random()
     });
   };
 
@@ -54,7 +59,6 @@ class App extends Component {
     this.setState({
       score: this.state.score + 1
     });
-    console.log("new score"+this.state.score)
   };
 
   setTopScore = () => {
@@ -68,13 +72,16 @@ class App extends Component {
     else {
       this.setGameStart();
     }
+    if (this.state.topScore === 12) {
+      this.setState({
+        status: this.state.status + 1
+      });
+    }
   };
 
   // on click set up a function to keep track of the users characters already selected and shuffle if 
   // game is not over
   handleClick = props => {
-    this.shuffle(this.state.chars);
-
     const newArray = [...this.state.chars];
     const index = newArray.indexOf(props);
     newArray[index] = { ...props };
@@ -87,8 +94,8 @@ class App extends Component {
       // set the top score if score is higher than current top score and then set the newstate for status and shuffled array
       this.setTopScore();
       this.setState({
-        chars: newArray,
-        status: "Nice Choice!"
+        status: "Nice Choice!",
+        rand: Math.random(),
       });
     } else if (newArray[index].clicked === true) {
       console.log("You Guessed Incorrectly!");
@@ -102,7 +109,7 @@ class App extends Component {
       <>
         <Navbar status={this.state.status} score={this.state.score} topScore={this.state.topScore} />
         <Jumbotron />
-        <Carousel>
+        <Carousel id={this.state.rand}>
           {this.state.chars.map(character => (
             <CarouselItem
               handleClick={this.handleClick}
@@ -119,5 +126,7 @@ class App extends Component {
     );
   }
 }
+
+
 
 export default App;
