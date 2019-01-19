@@ -14,7 +14,11 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
+<<<<<<< HEAD
   "/Futurama-Click-Memory/precache-manifest.ff06c48ecb0e8bb74369db17e4ee6180.js"
+=======
+  "/Futurama-Click-Memory/precache-manifest.cb90e1a1670a8d1357bc9c032ed85843.js"
+>>>>>>> ef1ef04dca26f0076a6253c77b3da95d6c929b04
 );
 
 workbox.clientsClaim();
