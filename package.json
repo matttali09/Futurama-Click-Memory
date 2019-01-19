@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://matttali09.github.io/Futurama-Click-Memory/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "pure-react-carousel": "^1.17.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
